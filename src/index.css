@@ -1,0 +1,91 @@
+/* src/index.css - Global styles */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: auto; /* Enable scrolling */
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: red;                /* Set the color to red */
+  text-shadow: -1px -1px 0 black, /* Add a black outline */
+               1px -1px 0 black,
+               -1px 1px 0 black,
+               1px 1px 0 black;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.background{
+  
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+      color: #213547;
+      background-color: #ffffff;
+  }
+}
+
+/* General app container styles */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 50px;  /* Add padding to ensure content isn't cut off */
+
+  color: white;
+  background-image: url('./assets/background1.jpg'); /* set background */
+  background-size: cover; /* Cover the entire area */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black overlay */
+  background-attachment: fixed; /* Keep background fixed while scrolling */
+}
+
+/* General app container styles */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Input container styles */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}

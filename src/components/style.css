@@ -1,0 +1,155 @@
+/* src/components/styles.css */
+
+/* Styles for StockInput.jsx */
+.input-group {
+   display: flex;
+   gap: 10px;
+}
+
+button {
+   padding: 10px 20px; /* Adjust padding as needed */
+   font-size: 16px;
+   border: none;
+   border: 2px solid white;  /* Add a white border */
+   border-radius: 20px; /* Rounded corners */
+   background-color: #000000; /* A green background */
+   color: white;
+   cursor: pointer;
+   transition: background-color 0.2s, transform 0.1s; /* Smooth transition */
+ }
+ 
+ button:hover {
+   background-color: red; /* Red on hover */
+ }
+ 
+ button:active {
+   transform: translateY(2px); /* Small movement on click */
+ }
+ 
+ button:disabled {
+   background-color: #cccccc; /* Grey out when disabled */
+   cursor: not-allowed;
+ }
+
+/* Unified style for text and date inputs */
+input[type="text"],
+input[type="date"] {
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid white; /* Add a thin white border */
+    font-size: 1rem;
+    text-align: center;
+    width: 150px; /* Adjust this value as needed */
+    box-sizing: border-box; /* Include border in the element's total width and height */
+}
+
+
+/* Styles for StockDataDisplay.jsx */
+.error-message {
+   color: red;
+}
+
+.data-container {
+   text-align: center;
+   margin-top: 5px; /* Reduced from 20px to 10px, or set to 0 */
+}
+
+.data-container h2 {
+   color: red;                /* Set the color to red */
+   text-shadow: -1px -1px 0 black, /* Add a black outline */
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+}
+
+.app-container {
+   /* Existing styles */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   width: 100vw;
+   background-color: #1a1a1a;
+   color: rgb(255, 255, 255);
+}
+
+/* index.css Input container styles */
+.input-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   width: 100%;
+}
+
+.info-message {
+   font-size: 1.2rem;
+   margin-top: 20px;
+   color: red;
+   text-shadow: -1px -1px 0 black, /* Add a black outline */
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+}
+
+/* Add scrollable container styles */
+.scrollable-prices {
+   height: 8em;
+   overflow-y: auto;
+   border: 1px solid #ccc;
+   padding: 0.5em;
+   border-radius: 15px;
+   width: 20%;  /* Take full width */
+   box-sizing: border-box;
+   background-color: #1a1a1a;
+   margin: 0 auto;
+   text-align: center; /* Center the text within the scrollable container */
+}
+
+/* Style the scrollbar */
+.scrollable-prices::-webkit-scrollbar {
+   width: 8px;
+}
+
+/* Style the scrollbar track */
+.scrollable-prices::-webkit-scrollbar-track {
+   background: #1a1a1a;
+   border-radius: 15px;
+}
+
+/* Style the scrollbar handle */
+.scrollable-prices::-webkit-scrollbar-thumb {
+   background: #888;
+   border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollable-prices::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+.data-container {
+   text-align: center;
+   margin-top: 5px;
+   width: 100%;
+}
+
+.prices-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.prices-container p {
+   font-size: 20rem;
+   margin: 0.2em 0;
+   word-break: break-word;
+   text-align: center;
+}
+
+.info-message {
+   font-size: 1.5rem;
+   margin-top: 20px;
+}
